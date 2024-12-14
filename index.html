@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カコタム組み合わせメーカー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>カコタム組み合わせメーカー</h1>
+        <p>以下のフォームにメンバーと子供の名前を追加してください。</p>
+
+        <!-- メンバー追加フォーム -->
+        <div class="form-group">
+            <input type="text" id="member-name" placeholder="メンバー名を入力">
+            <button id="add-member">メンバーを追加</button>
+        </div>
+        <ul id="member-list" class="list">
+            <!-- メンバー一覧がここに表示されます -->
+        </ul>
+
+        <!-- 子供追加フォーム -->
+        <div class="form-group">
+            <input type="text" id="child-name" placeholder="子供名を入力">
+            <button id="add-child">子供を追加</button>
+        </div>
+        <ul id="child-list" class="list">
+            <!-- 子供一覧がここに表示されます -->
+        </ul>
+
+        <!-- 枠の管理 -->
+        <div class="form-group">
+            <button id="add-frame">枠を追加</button>
+            <button id="remove-frame">枠を削除</button>
+        </div>
+
+        <div id="result-container" class="result-container">
+            <!-- 動的に枠が追加されます -->
+        </div>
+
+        <button id="generate">組み合わせを生成</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
